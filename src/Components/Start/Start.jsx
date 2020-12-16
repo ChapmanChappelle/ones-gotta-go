@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import "./Start.css"
 
 export const Start = () => {
@@ -10,25 +10,25 @@ export const Start = () => {
                <li>
                   <img
                      src="http://placehold.it/360x240"
-                     alt="First gallery image"
+                     alt=""
                   />
                </li>
                <li>
                   <img
                      src="http://placehold.it/360x240"
-                     alt="Second gallery image"
+                     alt=" "
                   />
                </li>
                <li>
                   <img
                      src="http://placehold.it/360x240"
-                     alt="Third gallery image"
+                     alt=""
                   />
                </li>
                <li>
                   <img
                      src="http://placehold.it/360x240"
-                     alt="Fourth gallery image"
+                     alt=""
                   />
                </li>
             </ul>

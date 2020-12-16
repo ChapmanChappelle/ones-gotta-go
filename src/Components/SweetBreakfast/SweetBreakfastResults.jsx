@@ -7,7 +7,7 @@ import frenchtoastImg from "./frenchtoast.png"
 import crepesImg from "./crepes.png"
 import firebase from "../../firebase"
 
-export const SweetBreakfast = () => {
+export const SweetBreakfastResults = () => {
    // so I can access the data
    const [pancakes, setPancakes] = useState()
    const [waffles, setWaffles] = useState()
@@ -29,7 +29,6 @@ export const SweetBreakfast = () => {
          .get()
          .then(function (doc) {
             if (doc.exists) {
-
                // display all fields
                console.log("Document data:", doc.data())
                pancakeCount = doc.get("Pancakes")
@@ -51,9 +50,10 @@ export const SweetBreakfast = () => {
          })
    }
 
+    // reflexts state change before render (user vote lags tho)
    useEffect(() => {
       getData()
-   }, [])
+   }, [pancakes,waffles,frenchToast,crepes])
 
    return (
       <div id="container">
@@ -62,27 +62,27 @@ export const SweetBreakfast = () => {
             <ul>
                <li>
                   <img src={pancakesImg} alt="pancakes" />
-                  <p>{pancakes}</p>
+                  <p>Votes: {pancakes}</p>
                </li>
                <li>
                   <img src={wafflesImg} alt="waffles" />
-                  <p>{waffles}</p>
+                  <p>Votes: {waffles}</p>
                </li>
                <li>
                   <img src={frenchtoastImg} alt="french toast" />
-                  <p>{frenchToast}</p>
+                  <p>Votes: {frenchToast}</p>
                </li>
                <li>
                   <img src={crepesImg} alt="crepes" />
-                  <p>{crepes}</p>
+                  <p>Votes: {crepes}</p>
                </li>
             </ul>
          </div>
-         <Link to="/">
+         <Link to="/2">
             <button id="nextPage">Next</button>
          </Link>
       </div>
    )
 }
 
-export default SweetBreakfast
+export default SweetBreakfastResults
