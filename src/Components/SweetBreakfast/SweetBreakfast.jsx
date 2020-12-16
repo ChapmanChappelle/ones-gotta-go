@@ -41,7 +41,7 @@ export const SweetBreakfast = () => {
 
    return (
       <div id="container">
-         <h1 id="category">Sweet Breakfast</h1>
+         <h1 id="category">One's Gotta Go: Breakfast Foods</h1>
          <div className="gallery">
             <ul>
                <li onClick={pancakeVote}>
@@ -66,11 +66,8 @@ export const SweetBreakfast = () => {
                </li>
             </ul>
          </div>
-         <Link to="/">
+         <Link to="/1r">
             <button id="showResults">Show Results (no vote)</button>
-         </Link>
-         <Link to="/">
-            <button id="nextPage">Next</button>
          </Link>
       </div>
    )

@@ -57,7 +57,7 @@ export const SweetBreakfastResults = () => {
 
    return (
       <div id="container">
-         <h1 id="category">Sweet Breakfast</h1>
+         <h1 id="category">One's Gotta Go: Breakfast Foods</h1>
          <div className="gallery">
             <ul>
                <li>

@@ -57,7 +57,7 @@ export const SportsResults = () => {
 
    return (
       <div id="container">
-         <h1 id="category">Sweet Breakfast</h1>
+         <h1 id="category">Sports</h1>
          <div className="gallery">
             <ul>
                <li>
@@ -69,7 +69,7 @@ export const SportsResults = () => {
                   <p>Votes: {baseball}</p>
                </li>
                <li>
-                  <img src={basketballImg} alt="french toast" />
+                  <img src={basketballImg} alt="basketball" />
                   <p>Votes: {basketball}</p>
                </li>
                <li>
@@ -78,7 +78,7 @@ export const SportsResults = () => {
                </li>
             </ul>
          </div>
-         <Link to="/">
+         <Link to="/3">
             <button id="nextPage">Next</button>
          </Link>
       </div>

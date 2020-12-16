@@ -41,7 +41,7 @@ export const Sports = () => {
 
    return (
       <div id="container">
-         <h1 id="category">Sports</h1>
+         <h1 id="category">One's Gotta Go: Sports</h1>
          <div className="gallery">
             <ul>
                <li onClick={footballVote}>
