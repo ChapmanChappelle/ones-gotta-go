@@ -41,7 +41,7 @@ export const Entertainment = () => {
 
    return (
       <div id="container">
-         <h1 id="category">One's Gotta Go: Superheroes</h1>
+         <h1 id="category">One's Gotta Go: Entertainment!</h1>
          <div className="gallery">
             <ul>
                <li onClick={booksVote}>
