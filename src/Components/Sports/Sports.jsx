@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import "./Sports.css"
 import footballImg from "./football.png"
 import baseballImg from "./baseball.png"
 import basketballImg from "./basketball.png"

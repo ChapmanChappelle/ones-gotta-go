@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import "./Entertainment.css"
 import booksImg from "./books.png"
 import moviesImg from "./movies.png"
 import musicImg from "./music.png"
@@ -41,7 +40,7 @@ export const Entertainment = () => {
 
    return (
       <div id="container">
-         <h1 id="category">One's Gotta Go: Entertainment!</h1>
+         <h1 id="category">One's Gotta Go: Entertainment Mediums!</h1>
          <div className="gallery">
             <ul>
                <li onClick={booksVote}>

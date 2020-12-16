@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import "./SocialMedia.css"
 import linkedInImg from "./linkedIn.png"
 import tikTokImg from "./TikTok.png"
 import twitterImg from "./twitter.png"

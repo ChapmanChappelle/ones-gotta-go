@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
-import "./SweetBreakfast.css"
 import pancakesImg from "./pancakes.png"
 import wafflesImg from "./Waffles.png"
 import frenchtoastImg from "./frenchtoast.png"
@@ -50,31 +49,48 @@ export const SweetBreakfastResults = () => {
          })
    }
 
-    // reflexts state change before render (user vote lags tho)
+   // reflexts state change before render (user vote lags tho)
    useEffect(() => {
       getData()
-   }, [pancakes,waffles,frenchToast,crepes])
+   }, [pancakes, waffles, frenchToast, crepes])
 
    return (
       <div id="container">
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
          <h1 id="category">One's Gotta Go: (sweet) Breakfast Foods!</h1>
          <div className="gallery">
             <ul>
                <li>
                   <img src={pancakesImg} alt="pancakes" />
-                  <p>Votes: {pancakes}</p>
+                  <p className="results">Votes: {pancakes}</p>
                </li>
                <li>
                   <img src={wafflesImg} alt="waffles" />
-                  <p>Votes: {waffles}</p>
+                  <p className="results">Votes: {waffles}</p>
                </li>
                <li>
                   <img src={frenchtoastImg} alt="french toast" />
-                  <p>Votes: {frenchToast}</p>
+                  <p className="results">Votes: {frenchToast}</p>
                </li>
                <li>
                   <img src={crepesImg} alt="crepes" />
-                  <p>Votes: {crepes}</p>
+                  <p className="results">Votes: {crepes}</p>
                </li>
             </ul>
          </div>

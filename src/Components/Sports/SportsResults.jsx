@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
-import "./Sports.css"
 import footballImg from "./football.png"
 import baseballImg from "./baseball.png"
 import basketballImg from "./basketball.png"
@@ -53,28 +52,45 @@ export const SportsResults = () => {
    // reflexts state change before render (user vote lags tho)
    useEffect(() => {
       getData()
-   }, [football,baseball,basketball,hockey])
+   }, [football, baseball, basketball, hockey])
 
    return (
       <div id="container">
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
          <h1 id="category">One's Gotta Go: Sports!</h1>
          <div className="gallery">
             <ul>
                <li>
                   <img src={footballImg} alt="football" />
-                  <p>Votes: {football}</p>
+                  <p className="results">Votes: {football}</p>
                </li>
                <li>
                   <img src={baseballImg} alt="baseball" />
-                  <p>Votes: {baseball}</p>
+                  <p className="results">Votes: {baseball}</p>
                </li>
                <li>
                   <img src={basketballImg} alt="basketball" />
-                  <p>Votes: {basketball}</p>
+                  <p className="results">Votes: {basketball}</p>
                </li>
                <li>
                   <img src={hockeyImg} alt="hockey" />
-                  <p>Votes: {hockey}</p>
+                  <p className="results">Votes: {hockey}</p>
                </li>
             </ul>
          </div>

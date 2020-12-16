@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
-import "./Superheroes.css"
 import batmanImg from "./batman.png"
 import spidermanImg from "./spider-man.png"
 import captainAmericaImg from "./captainAmerica.png"
@@ -53,28 +52,45 @@ export const SuperherosResults = () => {
    // reflexts state change before render (user vote lags tho)
    useEffect(() => {
       getData()
-   }, [batman,spiderman,captainAmerica,superman])
+   }, [batman, spiderman, captainAmerica, superman])
 
    return (
       <div id="container">
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
          <h1 id="category">One's Gotta Go: Superheroes!</h1>
          <div className="gallery">
             <ul>
                <li>
                   <img src={batmanImg} alt="batman" />
-                  <p>Votes: {batman}</p>
+                  <p className="results">Votes: {batman}</p>
                </li>
                <li>
                   <img src={spidermanImg} alt="spiderman" />
-                  <p>Votes: {spiderman}</p>
+                  <p className="results">Votes: {spiderman}</p>
                </li>
                <li>
                   <img src={captainAmericaImg} alt="captain america" />
-                  <p>Votes: {captainAmerica}</p>
+                  <p className="results">Votes: {captainAmerica}</p>
                </li>
                <li>
                   <img src={supermanImg} alt="superman" />
-                  <p>Votes: {superman}</p>
+                  <p className="results">Votes: {superman}</p>
                </li>
             </ul>
          </div>

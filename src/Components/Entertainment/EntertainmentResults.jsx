@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
-import "./Entertainment.css"
 import booksImg from "./books.png"
 import moviesImg from "./movies.png"
 import musicImg from "./music.png"
@@ -53,28 +52,45 @@ export const EntertainmentResults = () => {
    // reflexts state change before render (user vote lags tho)
    useEffect(() => {
       getData()
-   }, [books,movies,music,podcasts])
+   }, [books, movies, music, podcasts])
 
    return (
       <div id="container">
-         <h1 id="category">One's Gotta Go: Entertainment!</h1>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <h1 id="category">One's Gotta Go: Entertainment Mediums!</h1>
          <div className="gallery">
             <ul>
                <li>
                   <img src={booksImg} alt="books" />
-                  <p>Votes: {books}</p>
+                  <p className="results">Votes: {books}</p>
                </li>
                <li>
                   <img src={moviesImg} alt="movies" />
-                  <p>Votes: {movies}</p>
+                  <p className="results">Votes: {movies}</p>
                </li>
                <li>
                   <img src={musicImg} alt="music" />
-                  <p>Votes: {music}</p>
+                  <p className="results">Votes: {music}</p>
                </li>
                <li>
                   <img src={podcastsImg} alt="podcasts" />
-                  <p>Votes: {podcasts}</p>
+                  <p className="results">Votes: {podcasts}</p>
                </li>
             </ul>
          </div>

@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import "./SweetBreakfast.css"
 import pancakesImg from "./pancakes.png"
 import wafflesImg from "./Waffles.png"
 import frenchtoastImg from "./frenchtoast.png"

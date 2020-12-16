@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import "./Superheroes.css"
 import batmanImg from "./batman.png"
 import spidermanImg from "./spider-man.png"
 import captainAmericaImg from "./captainAmerica.png"
@@ -41,7 +40,7 @@ export const Superheroes = () => {
 
    return (
       <div id="container">
-         <h1 id="category">One's Gotta Go: Superheroes</h1>
+         <h1 id="category">One's Gotta Go: Superheroes!</h1>
          <div className="gallery">
             <ul>
                <li onClick={batmanVote}>

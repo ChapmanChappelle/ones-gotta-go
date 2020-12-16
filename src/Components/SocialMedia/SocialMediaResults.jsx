@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
-import "./SocialMedia.css"
 import linkedInImg from "./linkedIn.png"
 import tikTokImg from "./TikTok.png"
 import twitterImg from "./twitter.png"
@@ -53,28 +52,45 @@ export const SocialMediaResults = () => {
    // reflexts state change before render (user vote lags tho)
    useEffect(() => {
       getData()
-   }, [linkedIn,tikTok,twitter,facebook])
+   }, [linkedIn, tikTok, twitter, facebook])
 
    return (
       <div id="container">
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
          <h1 id="category">One's Gotta Go: Social Media!</h1>
          <div className="gallery">
             <ul>
                <li>
                   <img src={linkedInImg} alt="LinkedIn" />
-                  <p>Votes: {linkedIn}</p>
+                  <p className="results">Votes: {linkedIn}</p>
                </li>
                <li>
                   <img src={tikTokImg} alt="TikTok" />
-                  <p>Votes: {tikTok}</p>
+                  <p className="results">Votes: {tikTok}</p>
                </li>
                <li>
                   <img src={twitterImg} alt="french toast" />
-                  <p>Votes: {twitter}</p>
+                  <p className="results">Votes: {twitter}</p>
                </li>
                <li>
                   <img src={facebookImg} alt="Facebook" />
-                  <p>Votes: {facebook}</p>
+                  <p className="results">Votes: {facebook}</p>
                </li>
             </ul>
          </div>
