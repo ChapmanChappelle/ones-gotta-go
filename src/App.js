@@ -9,6 +9,8 @@ import SocialMediaResults from "./Components/SocialMedia/SocialMediaResults"
 import { BrowserRouter, Route, Switch } from "react-router-dom"
 import Superheroes from "./Components/Superheroes/Superheroes"
 import SuperherosResults from "./Components/Superheroes/SuperheroesResults"
+import Entertainment from "./Components/Entertainment/Entertainment"
+import EntertainmentResults from "./Components/Entertainment/EntertainmentResults"
 
 function App() {
    return (
@@ -23,6 +25,8 @@ function App() {
             <Route exact path="/3r" component={SocialMediaResults} />
             <Route exact path="/4" component={Superheroes} />
             <Route exact path="/4r" component={SuperherosResults} />
+            <Route exact path="/5" component={Entertainment} />
+            <Route exact path="/5r" component={EntertainmentResults} />
 
 
          </Switch>
