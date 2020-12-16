@@ -7,6 +7,8 @@ import SportsResults from "./Components/Sports/SportsResults"
 import SocialMedia from "./Components/SocialMedia/SocialMedia"
 import SocialMediaResults from "./Components/SocialMedia/SocialMediaResults"
 import { BrowserRouter, Route, Switch } from "react-router-dom"
+import Superheroes from "./Components/Superheroes/Superheroes"
+import SuperherosResults from "./Components/Superheroes/SuperheroesResults"
 
 function App() {
    return (
@@ -19,6 +21,9 @@ function App() {
             <Route exact path="/2r" component={SportsResults} /> 
             <Route exact path="/3" component={SocialMedia} />
             <Route exact path="/3r" component={SocialMediaResults} />
+            <Route exact path="/4" component={Superheroes} />
+            <Route exact path="/4r" component={SuperherosResults} />
+
 
          </Switch>
       </BrowserRouter>

@@ -57,7 +57,7 @@ export const SocialMediaResults = () => {
 
    return (
       <div id="container">
-         <h1 id="category">Social Media</h1>
+         <h1 id="category">One's Gotta Go: Social Media!</h1>
          <div className="gallery">
             <ul>
                <li>
